@@ -24,7 +24,7 @@ function getFetch(){
     	console.log(data)
     	if( data.media_type === 'image' ){
         	document.querySelector('img').src = data.hdurl
-			document.querySelector('#date').innerText = ' ' + choice
+			document.querySelector('#date').innerText += ' ' + choice
 			//console.log(data.media_type) //used for testing
     	}else if(data.media_type === 'video'){
 			getFetch() //call get fetch function to avoid video media
