@@ -17,7 +17,7 @@ function getFetch(){
 	const choice = randomDate(new Date(2012, 0, 1), new Date());
 	//console.log(choice) //used for testing
 
-	const url = `https://api.nasa.gov/planetary/apod?api_key=zU71SV2z8UAS2tpSRxtx9Ii4giGUAk6QIufK4bCn&date=${choice}`
+	const url = `https://api.nasa.gov/planetary/apod?api_key=eMTMgDBfB907eSKD5JtnZb895W1oUbitgcYqUXL3&date=${choice}`
 	fetch(url)
     .then(res => res.json()) // parse response as JSON
     .then(data => {
