@@ -4,18 +4,27 @@
 
 /* Box Model Hack */
 *{
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+body{
+	background-color: black;
+}
+
 img{
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+	width: 100em;
+	height: auto;
 }
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+h1{
+	color: #808080
+}
