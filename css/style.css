@@ -15,10 +15,11 @@ body{
 }
 .title{
 	float: left;
+	margin-left: 1%;
 }
 .datePosted{
 	float: right;
-
+	margin-right: 1%;
 }
 
 img{
@@ -29,7 +30,8 @@ img{
 }
 .explanation{
 	float: right;
-	width: 18%;
+	margin-right: 1%;
+	width: 17%;
 }
 
 

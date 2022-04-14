@@ -15,8 +15,7 @@ function getFetch(){
 	}
 
 	const choice = randomDate(new Date(2012, 0, 1), new Date());
-	document.querySelector('#date').innerText += ' ' + choice
-	console.log(choice) //used for testing
+	//console.log(choice) //used for testing
 
 	const url = `https://api.nasa.gov/planetary/apod?api_key=zU71SV2z8UAS2tpSRxtx9Ii4giGUAk6QIufK4bCn&date=${choice}`
 	fetch(url)
@@ -25,10 +24,11 @@ function getFetch(){
     	console.log(data)
     	if( data.media_type === 'image' ){
         	document.querySelector('img').src = data.hdurl
-			console.log(data.media_type) //used for testing
+			document.querySelector('#date').innerText = ' ' + choice
+			//console.log(data.media_type) //used for testing
     	}else if(data.media_type === 'video'){
 			getFetch() //call get fetch function to avoid video media
-			console.log(data.media_type) //used for testing
+			//console.log(data.media_type) //used for testing
     	}
        
     	document.querySelector('h3').innerText = data.explanation
