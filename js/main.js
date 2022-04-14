@@ -14,7 +14,7 @@ function getFetch(){
 		return [year, month, day].join('-') //return formatted date
 	}
 
-	const choice = randomDate(new Date(2012, 0, 1), new Date());
+	const choice = randomDate(new Date(1995, 16, 6), new Date());
 	//console.log(choice) //used for testing
 
 	const url = `https://api.nasa.gov/planetary/apod?api_key=eMTMgDBfB907eSKD5JtnZb895W1oUbitgcYqUXL3&date=${choice}`
